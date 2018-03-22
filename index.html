@@ -26,7 +26,7 @@
 
     <!-- Employee Tracker -->
     <div class="container">
-
+        <div><img src="train.jpeg" class="img-fluid" alt="Responsive image"></div>
         <!-- Jumbotron -->
         <div class="jumbotron text-white  bg-info mb-3">
             <h1 class="text-center">Anytime is Train Time</h1>
@@ -48,11 +48,11 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Train Name</th>
-                                        <th scope="col">Destination</th>
-                                        <th scope="col">Frequency(min)</th>
-                                        <th scope="col">Next Arrival</th>
-                                        <th scope="col">Minutes Away</th>
+                                        <th id="train"scope="col">Train Name</th>
+                                        <th id="destination" scope="col">Destination</th>
+                                        <th id="frequency" scope="col">Frequency(min)</th>
+                                        <th id="arrival" scope="col">Next Arrival</th>
+                                        <th id="minutes-away" scope="col">Minutes Away</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -116,7 +116,7 @@
 <br/>
 
 
-                <!-- Add Employee  -->
+                <!-- Add Train -->
                 <div class="card">
                     <div class="card-header text-white bg-info">
                        Add Train
@@ -125,26 +125,26 @@
                         <form>
                             <div class="form-group">
                                 <label for="search term">Train Name</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                <input type="text" class="form-control" id="trainName-input" placeholder="">
                 
                             </div>
                 
                             <div class="form-group">
                                 <label for="search term">Destinaton</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                <input type="text" class="form-control" id="destination-input" placeholder="">
                             </div>
                 
                             <div class="form-group">
                                 <label for="search term">First Train Time(HH:mm Military Time)</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="">
+                                <input type="email" class="form-control" id="firstTrain-input"  placeholder="">
                 
                             </div>
                             <div class="form-group">
                                 <label for="search term">Frequency (Min)</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="">
+                                <input type="email" class="form-control" id="email-input"  placeholder="">
                 
                             </div>
-                            <button type="submit" class="btn btn-info">Submit</button>
+                            <button id="addTrainInfo" type="submit" class="btn btn-info">Submit</button>
                             
                 
                         </form>
